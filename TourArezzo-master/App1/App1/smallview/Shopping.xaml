@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.smallview.Shopping"
+             xmlns:local="clr-namespace:App1"
+             >
+    <ContentView.Content>
+        <Frame OutlineColor="Accent" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" >
+                <!--first one is an image in contentview-->
+                <ContentView x:Name="contentViewforFirstImage" HeightRequest="80" WidthRequest="80" BackgroundColor="Transparent">
+
+                    <Image Source="https://s3-media4.fl.yelpcdn.com/bphoto/OGcA8vvKqCyDY4IUMydjfA/o.jpg" Aspect="Fill">
+
+                    </Image>
+
+                </ContentView>
+                <!--the next one is a stacklayout for restaurantName reviewScore Special and address-->
+                <ContentView WidthRequest="200" BackgroundColor="Transparent">
+
+
+                    <StackLayout>
+                        <Label x:Name="restaurantName" Text="Mr Sushi" FontSize="10">
+
+                        </Label>
+                        <Label x:Name="reviewScore" Text="4.5"  FontSize="10">
+
+                        </Label>
+                        <Label x:Name="special" Text="Sushi bars, seafood, Ramen"  FontSize="10">
+
+                        </Label>
+
+                        <Label x:Name="address" Text="1204 n interstate Dr,Ste 130, Norman" FontSize="10">
+
+
+                        </Label>
+
+                    </StackLayout>
+                </ContentView>
+                <StackLayout>
+                    <Label x:Name="distance" Text="4.1 mi" FontSize="10">
+                    </Label>
+                    <Label x:Name="averagePrice" Text="8,1$" FontSize="10">
+
+                    </Label>
+                </StackLayout>
+
+
+
+
+
+
+
+            </StackLayout>
+
+
+
+
+
+
+        </Frame>
+    </ContentView.Content>
+</ContentView>

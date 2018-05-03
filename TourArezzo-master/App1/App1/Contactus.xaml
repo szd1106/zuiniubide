@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImage="sd.png"
+             x:Class="App1.Contactus">
+    <AbsoluteLayout BackgroundColor="Transparent">
+        <Button Image="ireturn.png" Clicked="Back" BackgroundColor="Transparent"/>
+        <Label Font="20" TextColor="Black" AbsoluteLayout.LayoutBounds="1,110">
+            <Label.Text>
+             Tianyi Chen
+            </Label.Text>
+        </Label>
+        <Button x:Name="Temail" Text="Tianyi.Chen-1@ou.edu" BackgroundColor="Transparent"  Font="15" AbsoluteLayout.LayoutBounds="50,125,250,40"/>
+        <Button x:Name="TphoneNumber" Text="(405)6252780" BackgroundColor="Transparent"  Font="15" AbsoluteLayout.LayoutBounds="50,155,250,40"/>
+
+        <Label Font="20" TextColor="Black"  AbsoluteLayout.LayoutBounds="1,200">
+            <Label.Text>
+             Qiang Pan
+            </Label.Text>
+        </Label>
+        <Button x:Name="Pemail" Text="Qiang.pan-1@ou.edu" BackgroundColor="Transparent"  Font="15" AbsoluteLayout.LayoutBounds="50,215,250,40"/>
+        <Button x:Name="PphoneNumber" Text="(405)2059971" BackgroundColor="Transparent"  Font="15" AbsoluteLayout.LayoutBounds="50,245,250,40"/>
+        
+        <Label Font="20" TextColor="Black" AbsoluteLayout.LayoutBounds="1,290">
+            <Label.Text>
+             Zhendong Sun
+            </Label.Text>
+        </Label>
+        <Button x:Name="Semail" Text="  Zhendong.Sun-1@ou.edu" BackgroundColor="Transparent"  Font="15" AbsoluteLayout.LayoutBounds="50,305,250,40"/>
+        <Button x:Name="SphoneNumber"  Text="(405)5351167" BackgroundColor="Transparent"  Font="15" AbsoluteLayout.LayoutBounds="50,335,250,40"/>
+
+    </AbsoluteLayout>
+</ContentPage>

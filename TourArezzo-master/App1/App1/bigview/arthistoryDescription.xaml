@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.bigview.arthistoryDescription"
+             xmlns:forms="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#DCDCDC">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <ContentView x:Name="imageView"  Grid.Column="0" Grid.Row="0" HorizontalOptions="FillAndExpand">
+                <StackLayout Spacing="-10">
+                    <forms:CarouselViewControl x:Name="myCarousel" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <forms:CarouselViewControl.ItemTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding .}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                            </DataTemplate>
+                        </forms:CarouselViewControl.ItemTemplate>
+                    </forms:CarouselViewControl>
+                    <Label x:Name="position" Text="." HorizontalOptions="Center" VerticalOptions="Center" FontSize="10" TextColor="White"/>
+                </StackLayout>
+
+            </ContentView>
+            <ContentView Grid.Column="0" Grid.Row="1" BackgroundColor="Transparent">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="8*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="description" Grid.Column="0" Grid.Row="0" BackgroundColor="White"/>
+
+                    <ContentView Grid.Column="0" Grid.Row="1" BackgroundColor="White">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="48*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="48*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button x:Name="Explore" Text="Explore" BackgroundColor="White" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" TextColor="Black" FontSize="Small"/>
+                            <BoxView Grid.Row="0" Grid.Column="1" Color="#A9A9A9" WidthRequest="1" HorizontalOptions="Center" />
+                            
+                            <Button x:Name="Ahdirection" Text="Direction" BackgroundColor="White" HorizontalOptions="Center" Grid.Row="0" Grid.Column="2" TextColor="Black" FontSize="Small"/>
+                        </Grid>
+                    </ContentView>
+
+
+
+
+                </Grid>
+
+            </ContentView>
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
